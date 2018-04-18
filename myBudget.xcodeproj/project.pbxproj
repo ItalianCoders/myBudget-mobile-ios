@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		34A294662087DEEC004EEA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294652087DEEC004EEA33 /* AppDelegate.swift */; };
-		34A294682087DEEC004EEA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294672087DEEC004EEA33 /* ViewController.swift */; };
+		34A294682087DEEC004EEA33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294672087DEEC004EEA33 /* LoginViewController.swift */; };
 		34A2946B2087DEEC004EEA33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A294692087DEEC004EEA33 /* Main.storyboard */; };
 		34A2946D2087DEEC004EEA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A2946C2087DEEC004EEA33 /* Assets.xcassets */; };
 		34A294702087DEEC004EEA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A2946E2087DEEC004EEA33 /* LaunchScreen.storyboard */; };
 		34A2947B2087DEEC004EEA33 /* myBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A2947A2087DEEC004EEA33 /* myBudgetTests.swift */; };
 		34A294862087DEEC004EEA33 /* myBudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294852087DEEC004EEA33 /* myBudgetUITests.swift */; };
+		34A294962087E023004EEA33 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294952087E023004EEA33 /* RoundedButton.swift */; };
+		34A294982087E614004EEA33 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294972087E614004EEA33 /* RoundedTextField.swift */; };
+		34A2949B2087ECA0004EEA33 /* UIViewController+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A2949A2087ECA0004EEA33 /* UIViewController+UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		34A294622087DEEC004EEA33 /* myBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A294652087DEEC004EEA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34A294672087DEEC004EEA33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34A294672087DEEC004EEA33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		34A2946A2087DEEC004EEA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34A2946C2087DEEC004EEA33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34A2946F2087DEEC004EEA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		34A294812087DEEC004EEA33 /* myBudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myBudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A294852087DEEC004EEA33 /* myBudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myBudgetUITests.swift; sourceTree = "<group>"; };
 		34A294872087DEEC004EEA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A294952087E023004EEA33 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		34A294972087E614004EEA33 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		34A2949A2087ECA0004EEA33 /* UIViewController+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UITextField.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		34A294642087DEEC004EEA33 /* myBudget */ = {
 			isa = PBXGroup;
 			children = (
+				34A294992087EC8B004EEA33 /* utils */,
+				34A294942087DF14004EEA33 /* layout */,
+				34A294932087DF0B004EEA33 /* views */,
 				34A294652087DEEC004EEA33 /* AppDelegate.swift */,
-				34A294672087DEEC004EEA33 /* ViewController.swift */,
+				34A294672087DEEC004EEA33 /* LoginViewController.swift */,
 				34A294692087DEEC004EEA33 /* Main.storyboard */,
 				34A2946C2087DEEC004EEA33 /* Assets.xcassets */,
 				34A2946E2087DEEC004EEA33 /* LaunchScreen.storyboard */,
@@ -123,6 +132,30 @@
 				34A294872087DEEC004EEA33 /* Info.plist */,
 			);
 			path = myBudgetUITests;
+			sourceTree = "<group>";
+		};
+		34A294932087DF0B004EEA33 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		34A294942087DF14004EEA33 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				34A294952087E023004EEA33 /* RoundedButton.swift */,
+				34A294972087E614004EEA33 /* RoundedTextField.swift */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		34A294992087EC8B004EEA33 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				34A2949A2087ECA0004EEA33 /* UIViewController+UITextField.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34A294682087DEEC004EEA33 /* ViewController.swift in Sources */,
+				34A294682087DEEC004EEA33 /* LoginViewController.swift in Sources */,
+				34A294962087E023004EEA33 /* RoundedButton.swift in Sources */,
 				34A294662087DEEC004EEA33 /* AppDelegate.swift in Sources */,
+				34A294982087E614004EEA33 /* RoundedTextField.swift in Sources */,
+				34A2949B2087ECA0004EEA33 /* UIViewController+UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +466,7 @@
 				DEVELOPMENT_TEAM = U9L48TP9TR;
 				INFOPLIST_FILE = myBudget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.ruggieroaltini.myBudget;
+				PRODUCT_BUNDLE_IDENTIFIER = it.italiancoders.myBudget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,7 +481,7 @@
 				DEVELOPMENT_TEAM = U9L48TP9TR;
 				INFOPLIST_FILE = myBudget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.ruggieroaltini.myBudget;
+				PRODUCT_BUNDLE_IDENTIFIER = it.italiancoders.myBudget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
