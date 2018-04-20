@@ -27,14 +27,5 @@ class RoundedTextField: UITextField {
             self.layer.sublayerTransform = CATransform3DMakeTranslation(paddingLeft, 0, 0)
         }
     }
-    
-    /*
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets(top: 0, left: paddingLeft, bottom: 0, right: 0)) //bounds.insetBy(dx: inset, dy: 0)
-    }
-    
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return textRect(forBounds: bounds)
-    }*/
 }
 

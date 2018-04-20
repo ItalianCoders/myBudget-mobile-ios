@@ -33,4 +33,15 @@ class myBudgetTests: XCTestCase {
         }
     }
     
+    func testUrlPathEncoder() {
+        let path = "http://myurlsomethingblabla.com/api/v1/users/{id}/"
+        
+        struct __Parameters: Encodable {
+            var id: Int
+        }
+        let parameters = __Parameters(id: 10)
+       
+        XCTAssertEqual(try! URLPathEncoder.encode(parameters, forUrl: path), "http://myurlsomethingblabla.com/api/v1/users/10/")
+        
+    }
 }

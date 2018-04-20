@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,13 +45,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log with your social account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9C-92-vjg">
-                                <rect key="frame" x="59" y="80" width="258" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <rect key="frame" x="55" y="80" width="266" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQA-fT-kBt" customClass="RoundedButton" customModule="myBudget" customModuleProvider="target">
-                                <rect key="frame" x="16" y="113.5" width="343" height="52"/>
+                                <rect key="frame" x="16" y="122" width="343" height="52"/>
                                 <color key="backgroundColor" red="0.22745098039215686" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="2vM-f5-pFk"/>
@@ -66,7 +67,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPl-nB-fzv" customClass="RoundedButton" customModule="myBudget" customModuleProvider="target">
-                                <rect key="frame" x="16" y="173.5" width="343" height="52"/>
+                                <rect key="frame" x="16" y="182" width="343" height="52"/>
                                 <color key="backgroundColor" red="0.83921568629999999" green="0.1764705882" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="pdk-9V-v11"/>
@@ -82,29 +83,23 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or with your My Budget account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Z9-9M-NEs">
-                                <rect key="frame" x="43" y="261.5" width="288" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <rect key="frame" x="39" y="270" width="297" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V8L-Ru-b62" customClass="RoundedTextField" customModule="myBudget" customModuleProvider="target">
-                                <rect key="frame" x="16" y="304" width="343" height="46"/>
+                                <rect key="frame" x="16" y="312" width="343" height="46"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="BWt-hz-tJV"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="23"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
-                                        <real key="value" value="18"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="insetDy">
-                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
                                         <real key="value" value="17"/>
@@ -115,7 +110,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7LT-tv-GGB" customClass="RoundedTextField" customModule="myBudget" customModuleProvider="target">
-                                <rect key="frame" x="16" y="366" width="343" height="46"/>
+                                <rect key="frame" x="16" y="374" width="343" height="46"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="WNX-Y6-Ads"/>
@@ -127,12 +122,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="23"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
-                                        <real key="value" value="18"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="insetDy">
-                                        <real key="value" value="12"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
                                         <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
@@ -142,18 +131,21 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPl-A3-AZd">
-                                <rect key="frame" x="16" y="544" width="343" height="48"/>
+                                <rect key="frame" x="16" y="542" width="343" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOj-HM-c1Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpV-Uf-pob" customClass="RoundedButton" customModule="myBudget" customModuleProvider="target">
-                                <rect key="frame" x="222" y="601" width="173" height="50"/>
+                                <rect key="frame" x="225" y="597" width="170" height="50"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="24u-vT-JvH"/>
-                                    <constraint firstAttribute="width" constant="173" id="utg-CU-Y2d"/>
+                                    <constraint firstAttribute="width" secondItem="XpV-Uf-pob" secondAttribute="height" multiplier="17:5" id="PRa-Qv-kRw"/>
+                                    <constraint firstAttribute="height" constant="50" id="vuI-Me-eDX"/>
                                 </constraints>
                                 <state key="normal" title="OR SIGN UP    ">
                                     <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,22 +161,22 @@
                         <constraints>
                             <constraint firstItem="V8L-Ru-b62" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="551-7R-jcI"/>
                             <constraint firstItem="bPl-nB-fzv" firstAttribute="top" secondItem="XQA-fT-kBt" secondAttribute="bottom" constant="8" id="5fB-kF-Cto"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sPl-A3-AZd" secondAttribute="bottom" constant="75" id="63A-ap-jbD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sPl-A3-AZd" secondAttribute="bottom" constant="77" id="63A-ap-jbD"/>
                             <constraint firstItem="XQA-fT-kBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="93p-2v-XEB"/>
                             <constraint firstItem="7LT-tv-GGB" firstAttribute="top" secondItem="V8L-Ru-b62" secondAttribute="bottom" constant="16" id="9qL-EH-3vQ"/>
                             <constraint firstItem="7LT-tv-GGB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ByI-WZ-7pj"/>
                             <constraint firstItem="bPl-nB-fzv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BzQ-0D-aT0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XpV-Uf-pob" secondAttribute="bottom" constant="16" id="Fc7-rg-eTG"/>
                             <constraint firstItem="F9C-92-vjg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fno-8Q-NbR"/>
                             <constraint firstItem="0Z9-9M-NEs" firstAttribute="top" secondItem="bPl-nB-fzv" secondAttribute="bottom" constant="36" id="LzX-oD-5Or"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V8L-Ru-b62" secondAttribute="trailing" constant="16" id="Nxe-fI-vn0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bPl-nB-fzv" secondAttribute="trailing" constant="16" id="Qyv-t8-rvD"/>
-                            <constraint firstAttribute="trailing" secondItem="XpV-Uf-pob" secondAttribute="trailing" constant="-20" id="Y9b-Zs-8m1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XpV-Uf-pob" secondAttribute="bottom" constant="20" id="RG2-dB-iwJ"/>
                             <constraint firstItem="V8L-Ru-b62" firstAttribute="top" secondItem="0Z9-9M-NEs" secondAttribute="bottom" constant="16" id="dFV-2t-6xq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XQA-fT-kBt" secondAttribute="trailing" constant="16" id="eRn-i2-YQ5"/>
                             <constraint firstItem="sPl-A3-AZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fg9-pJ-21T"/>
+                            <constraint firstAttribute="trailing" secondItem="XpV-Uf-pob" secondAttribute="trailing" constant="-20" id="hij-IB-Rj8"/>
                             <constraint firstItem="F9C-92-vjg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="hiz-AM-623"/>
-                            <constraint firstItem="XQA-fT-kBt" firstAttribute="top" secondItem="F9C-92-vjg" secondAttribute="bottom" constant="8" id="i59-Yx-kyF"/>
+                            <constraint firstItem="XQA-fT-kBt" firstAttribute="top" secondItem="F9C-92-vjg" secondAttribute="bottom" constant="16" id="i59-Yx-kyF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sPl-A3-AZd" secondAttribute="trailing" constant="16" id="jRV-Nf-aqY"/>
                             <constraint firstItem="0Z9-9M-NEs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nyT-is-iEf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7LT-tv-GGB" secondAttribute="trailing" constant="16" id="wjj-Tu-WlD"/>
@@ -192,10 +184,125 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="s7b-py-jiI"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="7LT-tv-GGB" id="v4I-3K-uAq"/>
+                        <outlet property="usernameTextField" destination="V8L-Ru-b62" id="Im0-S7-WZp"/>
+                        <segue destination="spk-Lz-sml" kind="presentation" identifier="login" id="nbf-Ru-xn6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YJd-lf-cn9">
+            <objects>
+                <navigationController id="spk-Lz-sml" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j6F-MB-ulL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.26274509800000001" green="0.62745098040000002" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pEU-6i-eCb" kind="relationship" relationship="rootViewController" id="Amq-IB-SQ2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnX-lE-emX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="134"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="R7x-hg-ghR">
+            <objects>
+                <viewController id="pEU-6i-eCb" customClass="MainViewController" customModule="myBudget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWU-Cq-ASX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVJ-hC-9hb" customClass="HeaderBox" customModule="myBudget" customModuleProvider="target">
+                                <rect key="frame" x="11" y="75" width="111" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="199-Q5-yJd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.4392156862745098" blue="0.10196078431372549" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="INCOMING"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="0.00€"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MS6-2V-xPs" customClass="HeaderBox" customModule="myBudget" customModuleProvider="target">
+                                <rect key="frame" x="132" y="75" width="111" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.89019607840000003" green="0.36470588240000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="EXPENSE"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="0.00€"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dss-G7-SKy" customClass="HeaderBox" customModule="myBudget" customModuleProvider="target">
+                                <rect key="frame" x="253" y="75" width="111" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="BALANCE"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="0.00€"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dss-G7-SKy" firstAttribute="leading" secondItem="MS6-2V-xPs" secondAttribute="trailing" constant="10" id="1iU-a7-OSJ"/>
+                            <constraint firstItem="MS6-2V-xPs" firstAttribute="width" secondItem="QVJ-hC-9hb" secondAttribute="width" id="5lb-6r-IJu"/>
+                            <constraint firstItem="MS6-2V-xPs" firstAttribute="leading" secondItem="QVJ-hC-9hb" secondAttribute="trailing" constant="10" id="6CM-9G-igm"/>
+                            <constraint firstItem="ObP-Xb-XPk" firstAttribute="trailing" secondItem="Dss-G7-SKy" secondAttribute="trailing" constant="11" id="76W-Vb-fV6"/>
+                            <constraint firstItem="Dss-G7-SKy" firstAttribute="height" secondItem="QVJ-hC-9hb" secondAttribute="height" id="B6K-ks-L12"/>
+                            <constraint firstItem="MS6-2V-xPs" firstAttribute="top" secondItem="ObP-Xb-XPk" secondAttribute="top" constant="11" id="MX2-dE-Qib"/>
+                            <constraint firstItem="Dss-G7-SKy" firstAttribute="top" secondItem="ObP-Xb-XPk" secondAttribute="top" constant="11" id="aoH-If-wd0"/>
+                            <constraint firstItem="MS6-2V-xPs" firstAttribute="height" secondItem="QVJ-hC-9hb" secondAttribute="height" id="dBZ-VZ-7tt"/>
+                            <constraint firstItem="QVJ-hC-9hb" firstAttribute="leading" secondItem="ObP-Xb-XPk" secondAttribute="leading" constant="11" id="hvL-GV-USz"/>
+                            <constraint firstItem="QVJ-hC-9hb" firstAttribute="top" secondItem="ObP-Xb-XPk" secondAttribute="top" constant="11" id="p5a-dN-Pfx"/>
+                            <constraint firstItem="Dss-G7-SKy" firstAttribute="width" secondItem="QVJ-hC-9hb" secondAttribute="width" id="w7P-ra-Unc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ObP-Xb-XPk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zNb-1A-CQc"/>
+                    <connections>
+                        <outlet property="balanceCard" destination="Dss-G7-SKy" id="NC5-kb-gne"/>
+                        <outlet property="expenseCard" destination="MS6-2V-xPs" id="lod-RY-P4a"/>
+                        <outlet property="incomingCard" destination="QVJ-hC-9hb" id="CrU-6a-SNY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHR-ye-IuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.8" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

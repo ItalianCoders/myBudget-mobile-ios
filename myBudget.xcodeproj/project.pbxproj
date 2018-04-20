@@ -17,6 +17,49 @@
 		34A294962087E023004EEA33 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294952087E023004EEA33 /* RoundedButton.swift */; };
 		34A294982087E614004EEA33 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294972087E614004EEA33 /* RoundedTextField.swift */; };
 		34A2949B2087ECA0004EEA33 /* UIViewController+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A2949A2087ECA0004EEA33 /* UIViewController+UITextField.swift */; };
+		34A294A12087FAC7004EEA33 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A02087FAC7004EEA33 /* AccountService.swift */; };
+		34A294A42087FB5B004EEA33 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A32087FB5B004EEA33 /* Result.swift */; };
+		34A294A62087FD3A004EEA33 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A52087FD3A004EEA33 /* AuthService.swift */; };
+		34A294A82087FEA4004EEA33 /* MovementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A72087FEA4004EEA33 /* MovementService.swift */; };
+		34A294AA20880008004EEA33 /* PendingInvitesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A920880008004EEA33 /* PendingInvitesService.swift */; };
+		34A294AC20880218004EEA33 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294AB20880218004EEA33 /* ApiClient.swift */; };
+		34A294AF20880417004EEA33 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294AE20880417004EEA33 /* LoginRequest.swift */; };
+		34A294B22088044C004EEA33 /* JwtAuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B12088044C004EEA33 /* JwtAuthenticationResponse.swift */; };
+		34A294B4208804B1004EEA33 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B3208804B1004EEA33 /* User.swift */; };
+		34A294B62088063E004EEA33 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B52088063E004EEA33 /* Account.swift */; };
+		34A294B820880840004EEA33 /* MyBudgetApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B720880840004EEA33 /* MyBudgetApiClient.swift */; };
+		34A294BA2088A278004EEA33 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B92088A278004EEA33 /* ApiError.swift */; };
+		34A294BC2088A681004EEA33 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294BB2088A681004EEA33 /* LoginResult.swift */; };
+		34A294BF2088B36E004EEA33 /* HeaderBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294BE2088B36E004EEA33 /* HeaderBox.swift */; };
+		34A294C12088B512004EEA33 /* UIView+EasyAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C02088B512004EEA33 /* UIView+EasyAnchor.swift */; };
+		34A294C42088C1E8004EEA33 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C32088C1E8004EEA33 /* Colors.swift */; };
+		34A294C62088CD3F004EEA33 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C52088CD3F004EEA33 /* Movement.swift */; };
+		34A294C82088D003004EEA33 /* GetAccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C72088D003004EEA33 /* GetAccountDetails.swift */; };
+		34A294CA2088D0F7004EEA33 /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C92088D0F7004EEA33 /* AccountDetails.swift */; };
+		34A294CC20890A6D004EEA33 /* URLPathEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294CB20890A6D004EEA33 /* URLPathEncoder.swift */; };
+		34A294CE20890B6A004EEA33 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294CD20890B6A004EEA33 /* HTTPParameter.swift */; };
+		34A294E220890D20004EEA33 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C32088C1E8004EEA33 /* Colors.swift */; };
+		34A294E320890D20004EEA33 /* JwtAuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B12088044C004EEA33 /* JwtAuthenticationResponse.swift */; };
+		34A294E420890D20004EEA33 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B3208804B1004EEA33 /* User.swift */; };
+		34A294E520890D20004EEA33 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B52088063E004EEA33 /* Account.swift */; };
+		34A294E620890D20004EEA33 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294BB2088A681004EEA33 /* LoginResult.swift */; };
+		34A294E720890D20004EEA33 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C52088CD3F004EEA33 /* Movement.swift */; };
+		34A294E820890D20004EEA33 /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C92088D0F7004EEA33 /* AccountDetails.swift */; };
+		34A294E920890D20004EEA33 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294AE20880417004EEA33 /* LoginRequest.swift */; };
+		34A294EA20890D20004EEA33 /* GetAccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C72088D003004EEA33 /* GetAccountDetails.swift */; };
+		34A294EB20890D20004EEA33 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294AB20880218004EEA33 /* ApiClient.swift */; };
+		34A294EC20890D20004EEA33 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A32087FB5B004EEA33 /* Result.swift */; };
+		34A294ED20890D20004EEA33 /* URLPathEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294CB20890A6D004EEA33 /* URLPathEncoder.swift */; };
+		34A294EE20890D20004EEA33 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294CD20890B6A004EEA33 /* HTTPParameter.swift */; };
+		34A294EF20890D20004EEA33 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A02087FAC7004EEA33 /* AccountService.swift */; };
+		34A294F020890D20004EEA33 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A52087FD3A004EEA33 /* AuthService.swift */; };
+		34A294F120890D20004EEA33 /* MovementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A72087FEA4004EEA33 /* MovementService.swift */; };
+		34A294F220890D20004EEA33 /* PendingInvitesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A920880008004EEA33 /* PendingInvitesService.swift */; };
+		34A294F320890D20004EEA33 /* MyBudgetApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B720880840004EEA33 /* MyBudgetApiClient.swift */; };
+		34A294F420890D20004EEA33 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294B92088A278004EEA33 /* ApiError.swift */; };
+		34A294F920892E37004EEA33 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294F820892E37004EEA33 /* Networking.swift */; };
+		34A294FB2089350F004EEA33 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294FA2089350F004EEA33 /* MainViewController.swift */; };
+		34A294FE208939E8004EEA33 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294FD208939E8004EEA33 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +96,30 @@
 		34A294952087E023004EEA33 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		34A294972087E614004EEA33 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		34A2949A2087ECA0004EEA33 /* UIViewController+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UITextField.swift"; sourceTree = "<group>"; };
+		34A294A02087FAC7004EEA33 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		34A294A32087FB5B004EEA33 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		34A294A52087FD3A004EEA33 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		34A294A72087FEA4004EEA33 /* MovementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementService.swift; sourceTree = "<group>"; };
+		34A294A920880008004EEA33 /* PendingInvitesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingInvitesService.swift; sourceTree = "<group>"; };
+		34A294AB20880218004EEA33 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		34A294AE20880417004EEA33 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		34A294B12088044C004EEA33 /* JwtAuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtAuthenticationResponse.swift; sourceTree = "<group>"; };
+		34A294B3208804B1004EEA33 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		34A294B52088063E004EEA33 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		34A294B720880840004EEA33 /* MyBudgetApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBudgetApiClient.swift; sourceTree = "<group>"; };
+		34A294B92088A278004EEA33 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		34A294BB2088A681004EEA33 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		34A294BE2088B36E004EEA33 /* HeaderBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBox.swift; sourceTree = "<group>"; };
+		34A294C02088B512004EEA33 /* UIView+EasyAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EasyAnchor.swift"; sourceTree = "<group>"; };
+		34A294C32088C1E8004EEA33 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		34A294C52088CD3F004EEA33 /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
+		34A294C72088D003004EEA33 /* GetAccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccountDetails.swift; sourceTree = "<group>"; };
+		34A294C92088D0F7004EEA33 /* AccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetails.swift; sourceTree = "<group>"; };
+		34A294CB20890A6D004EEA33 /* URLPathEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPathEncoder.swift; sourceTree = "<group>"; };
+		34A294CD20890B6A004EEA33 /* HTTPParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
+		34A294F820892E37004EEA33 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		34A294FA2089350F004EEA33 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		34A294FD208939E8004EEA33 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +170,15 @@
 		34A294642087DEEC004EEA33 /* myBudget */ = {
 			isa = PBXGroup;
 			children = (
+				34A294FF208A33D4004EEA33 /* nogit */,
+				34A294C22088BC61004EEA33 /* theme */,
+				34A2949E2087F062004EEA33 /* rest */,
+				34A2949D2087F05B004EEA33 /* controller */,
+				34A2949C2087F020004EEA33 /* viewcontrollers */,
 				34A294992087EC8B004EEA33 /* utils */,
 				34A294942087DF14004EEA33 /* layout */,
 				34A294932087DF0B004EEA33 /* views */,
 				34A294652087DEEC004EEA33 /* AppDelegate.swift */,
-				34A294672087DEEC004EEA33 /* LoginViewController.swift */,
 				34A294692087DEEC004EEA33 /* Main.storyboard */,
 				34A2946C2087DEEC004EEA33 /* Assets.xcassets */,
 				34A2946E2087DEEC004EEA33 /* LaunchScreen.storyboard */,
@@ -137,6 +208,8 @@
 		34A294932087DF0B004EEA33 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				34A294BE2088B36E004EEA33 /* HeaderBox.swift */,
+				34A294C02088B512004EEA33 /* UIView+EasyAnchor.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -153,9 +226,115 @@
 		34A294992087EC8B004EEA33 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				34A294FC208939DE004EEA33 /* string */,
 				34A2949A2087ECA0004EEA33 /* UIViewController+UITextField.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		34A2949C2087F020004EEA33 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				34A294672087DEEC004EEA33 /* LoginViewController.swift */,
+				34A294FA2089350F004EEA33 /* MainViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		34A2949D2087F05B004EEA33 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		34A2949E2087F062004EEA33 /* rest */ = {
+			isa = PBXGroup;
+			children = (
+				34A294F72089284A004EEA33 /* library */,
+				34A294B02088043B004EEA33 /* model */,
+				34A294AD20880405004EEA33 /* requests */,
+				34A294B720880840004EEA33 /* MyBudgetApiClient.swift */,
+			);
+			path = rest;
+			sourceTree = "<group>";
+		};
+		34A2949F2087F0BA004EEA33 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				34A294A02087FAC7004EEA33 /* AccountService.swift */,
+				34A294A52087FD3A004EEA33 /* AuthService.swift */,
+				34A294A72087FEA4004EEA33 /* MovementService.swift */,
+				34A294A920880008004EEA33 /* PendingInvitesService.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		34A294A22087FB4F004EEA33 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				34A294A32087FB5B004EEA33 /* Result.swift */,
+				34A294CB20890A6D004EEA33 /* URLPathEncoder.swift */,
+				34A294CD20890B6A004EEA33 /* HTTPParameter.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		34A294AD20880405004EEA33 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				34A294AE20880417004EEA33 /* LoginRequest.swift */,
+				34A294C72088D003004EEA33 /* GetAccountDetails.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		34A294B02088043B004EEA33 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				34A294B12088044C004EEA33 /* JwtAuthenticationResponse.swift */,
+				34A294B3208804B1004EEA33 /* User.swift */,
+				34A294B52088063E004EEA33 /* Account.swift */,
+				34A294BB2088A681004EEA33 /* LoginResult.swift */,
+				34A294C52088CD3F004EEA33 /* Movement.swift */,
+				34A294C92088D0F7004EEA33 /* AccountDetails.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		34A294C22088BC61004EEA33 /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				34A294C32088C1E8004EEA33 /* Colors.swift */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		34A294F72089284A004EEA33 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				34A294A22087FB4F004EEA33 /* util */,
+				34A294AB20880218004EEA33 /* ApiClient.swift */,
+				34A294B92088A278004EEA33 /* ApiError.swift */,
+				34A294F820892E37004EEA33 /* Networking.swift */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		34A294FC208939DE004EEA33 /* string */ = {
+			isa = PBXGroup;
+			children = (
+				34A294FD208939E8004EEA33 /* Currency.swift */,
+			);
+			path = string;
+			sourceTree = "<group>";
+		};
+		34A294FF208A33D4004EEA33 /* nogit */ = {
+			isa = PBXGroup;
+			children = (
+				34A2949F2087F0BA004EEA33 /* api */,
+			);
+			path = nogit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,11 +471,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A294C62088CD3F004EEA33 /* Movement.swift in Sources */,
+				34A294AC20880218004EEA33 /* ApiClient.swift in Sources */,
+				34A294CA2088D0F7004EEA33 /* AccountDetails.swift in Sources */,
+				34A294CE20890B6A004EEA33 /* HTTPParameter.swift in Sources */,
+				34A294BA2088A278004EEA33 /* ApiError.swift in Sources */,
 				34A294682087DEEC004EEA33 /* LoginViewController.swift in Sources */,
+				34A294FE208939E8004EEA33 /* Currency.swift in Sources */,
+				34A294A82087FEA4004EEA33 /* MovementService.swift in Sources */,
+				34A294AF20880417004EEA33 /* LoginRequest.swift in Sources */,
+				34A294CC20890A6D004EEA33 /* URLPathEncoder.swift in Sources */,
+				34A294AA20880008004EEA33 /* PendingInvitesService.swift in Sources */,
+				34A294BF2088B36E004EEA33 /* HeaderBox.swift in Sources */,
+				34A294BC2088A681004EEA33 /* LoginResult.swift in Sources */,
+				34A294B62088063E004EEA33 /* Account.swift in Sources */,
+				34A294FB2089350F004EEA33 /* MainViewController.swift in Sources */,
 				34A294962087E023004EEA33 /* RoundedButton.swift in Sources */,
+				34A294C42088C1E8004EEA33 /* Colors.swift in Sources */,
+				34A294B4208804B1004EEA33 /* User.swift in Sources */,
+				34A294C12088B512004EEA33 /* UIView+EasyAnchor.swift in Sources */,
 				34A294662087DEEC004EEA33 /* AppDelegate.swift in Sources */,
+				34A294A12087FAC7004EEA33 /* AccountService.swift in Sources */,
+				34A294A42087FB5B004EEA33 /* Result.swift in Sources */,
+				34A294C82088D003004EEA33 /* GetAccountDetails.swift in Sources */,
+				34A294B22088044C004EEA33 /* JwtAuthenticationResponse.swift in Sources */,
+				34A294B820880840004EEA33 /* MyBudgetApiClient.swift in Sources */,
 				34A294982087E614004EEA33 /* RoundedTextField.swift in Sources */,
 				34A2949B2087ECA0004EEA33 /* UIViewController+UITextField.swift in Sources */,
+				34A294A62087FD3A004EEA33 /* AuthService.swift in Sources */,
+				34A294F920892E37004EEA33 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +507,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A294EB20890D20004EEA33 /* ApiClient.swift in Sources */,
+				34A294E920890D20004EEA33 /* LoginRequest.swift in Sources */,
+				34A294ED20890D20004EEA33 /* URLPathEncoder.swift in Sources */,
+				34A294EF20890D20004EEA33 /* AccountService.swift in Sources */,
+				34A294F220890D20004EEA33 /* PendingInvitesService.swift in Sources */,
+				34A294E620890D20004EEA33 /* LoginResult.swift in Sources */,
+				34A294E520890D20004EEA33 /* Account.swift in Sources */,
+				34A294E820890D20004EEA33 /* AccountDetails.swift in Sources */,
+				34A294E420890D20004EEA33 /* User.swift in Sources */,
+				34A294EC20890D20004EEA33 /* Result.swift in Sources */,
+				34A294EA20890D20004EEA33 /* GetAccountDetails.swift in Sources */,
+				34A294E720890D20004EEA33 /* Movement.swift in Sources */,
+				34A294F320890D20004EEA33 /* MyBudgetApiClient.swift in Sources */,
+				34A294F420890D20004EEA33 /* ApiError.swift in Sources */,
+				34A294F120890D20004EEA33 /* MovementService.swift in Sources */,
+				34A294E320890D20004EEA33 /* JwtAuthenticationResponse.swift in Sources */,
 				34A2947B2087DEEC004EEA33 /* myBudgetTests.swift in Sources */,
+				34A294E220890D20004EEA33 /* Colors.swift in Sources */,
+				34A294EE20890D20004EEA33 /* HTTPParameter.swift in Sources */,
+				34A294F020890D20004EEA33 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
