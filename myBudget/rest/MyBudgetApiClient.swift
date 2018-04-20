@@ -12,6 +12,16 @@ public enum ApiClientError: Error {
     case wrongParameters
 }
 
+fileprivate extension UrlRequestFactory {
+    @discardableResult
+    func addAuthTokenIfNonEmpty(_ authToken: String) -> UrlRequestFactory {
+        if authToken.count > 0 {
+            self.addHeader(field: "x-auth-token", value: authToken)
+        }
+        return self
+    }
+}
+
 public class MyBudgetApiClient {
     private let baseEndpoint = "https://floating-ravine-25522.herokuapp.com/"
     private let session = URLSession(configuration: .default)
@@ -34,10 +44,9 @@ public class MyBudgetApiClient {
     public func send<T: JsonApiRequest>(_ request: T, authToken: String = "", completion: @escaping ResultCallback<T.Response>) throws {
         
         let endpoint = self.endpoint(for: request)
-        let urlRequest = DefaultNetworking().requestFactory(endpoint)
-        if authToken.count > 0 {
-            urlRequest.addHeader(field: "x-auth-token", value: authToken)
-        }
+        let urlRequest = DefaultNetworking()
+            .requestFactory(endpoint)
+            .addAuthTokenIfNonEmpty(authToken)
         try urlRequest
             .httpMethod(request.type)
             .jsonBody(request.body)
@@ -61,14 +70,10 @@ public class MyBudgetApiClient {
     public func send<T: TemplateApiRequest>(_ request: T, authToken: String = "", completion: @escaping ResultCallback<T.Response>) {
         
         let endpoint = try! self.endpoint(for: request)
-        let request = DefaultNetworking()
+        let _ = DefaultNetworking()
             .requestFactory(endpoint)
             .httpMethod(.get)
-        
-        if authToken.count > 0 {
-            request.addHeader(field: "x-auth-token", value: authToken)
-        }
-        request
+            .addAuthTokenIfNonEmpty(authToken)
             .sharedDataTask { data, response, error in
                 guard let data = data, error == nil else {
                     completion(.failure(ApiError.server(message: error!.localizedDescription)))
