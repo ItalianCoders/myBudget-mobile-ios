@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
         
         let accessToken: String = self.accessToken
         
-        MyBudgetApiClient().request(GetAccountDetails(id: authResponse.accounts[0].id), authToken: accessToken) {
+        MyBudgetApiClient().send(GetAccountDetailsRequest(id: authResponse.accounts[0].id), authToken: accessToken) {
             result in
             
             switch result {
@@ -44,17 +44,17 @@ class MainViewController: UIViewController {
             }
         }
     }
-    
+    /*
     @IBAction func button(_ sender: Any) {
         
         let accessToken: String = self.accessToken
         
-        MyBudgetApiClient().request(GetAccountDetails(id: authResponse.accounts[0].id), authToken: accessToken) {
+        MyBudgetApiClient().send(GetAccountDetailsRequest(id: authResponse.accounts[0].id), authToken: accessToken) {
             accountDetails in
             
             print("ACCOUNT DETAILS: ")
             print(accountDetails)
         }
-    }
+    }*/
     
 }

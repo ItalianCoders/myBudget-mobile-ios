@@ -23,6 +23,14 @@ public enum RequestType: String, Codable {
     case delete = "DELETE"
 }
 
+public enum JsonRequestType: String, Codable {
+    case post = "POST"
+    case put = "PUT"
+    case delete = "DELETE"
+}
+
+struct Nothing: Decodable {}
+
 public protocol ApiRequest: Encodable {
     associatedtype Response: Decodable
     
@@ -33,13 +41,21 @@ public protocol ApiRequest: Encodable {
 public protocol JsonApiRequest: ApiRequest {
     associatedtype Body: Codable
     
+    var type: JsonRequestType { get }
+    
     var body: Body { get set }
 }
 
 public protocol PathParameters: Codable {
-    associatedtype _Parameters: Encodable
+    associatedtype PathParametersType: Encodable
     
-    var parameters: _Parameters { get }
+    var pathParameters: PathParametersType { get }
+}
+
+public protocol QueryParameters: Encodable {
+    associatedtype QueryParametersType: Encodable
+    
+    var queryParameters: QueryParametersType { get }
 }
 
 public typealias TemplateApiRequest = ApiRequest & PathParameters

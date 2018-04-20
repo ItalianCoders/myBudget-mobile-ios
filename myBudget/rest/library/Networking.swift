@@ -26,6 +26,12 @@ class UrlRequestFactory {
     }
     
     @discardableResult
+    func httpMethod(_ type: JsonRequestType) -> UrlRequestFactory {
+        urlRequest.httpMethod = type.rawValue
+        return self
+    }
+    
+    @discardableResult
     func contentType(_ type: ContentType) -> UrlRequestFactory {
         urlRequest.setValue(type.rawValue, forHTTPHeaderField: "Content-Type")
         return self
@@ -52,16 +58,16 @@ class UrlRequestFactory {
 }
 
 protocol Networking {
-    func request(_ urlString: String) -> UrlRequestFactory
-    func request(_ url: URL) -> UrlRequestFactory
+    func requestFactory(_ urlString: String) -> UrlRequestFactory
+    func requestFactory(_ url: URL) -> UrlRequestFactory
 }
 
 extension Networking {
-    func request(_ url: URL) -> UrlRequestFactory {
+    func requestFactory(_ url: URL) -> UrlRequestFactory {
         return UrlRequestFactory(url: url)
     }
     
-    func request(_ urlString: String) -> UrlRequestFactory {
+    func requestFactory(_ urlString: String) -> UrlRequestFactory {
         return UrlRequestFactory(url: URL(string: urlString)!)
     }
 }

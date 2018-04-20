@@ -22,7 +22,7 @@ public class MyBudgetApiClient {
     
     public func endpoint<T: ApiRequest & PathParameters>(for request: T) throws -> URL {
         let templatePath = (baseEndpoint as NSString).appendingPathComponent(request.resourceName)
-        guard let path = try? URLPathEncoder.encode(request.parameters, forUrl: templatePath) else {
+        guard let path = try? URLPathEncoder.encode(request.pathParameters, forUrl: templatePath) else {
             throw ApiClientError.wrongParameters
         }
         guard let url = URL(string: path) else {
@@ -31,11 +31,38 @@ public class MyBudgetApiClient {
         return url
     }
     
-    public func request<T: TemplateApiRequest>(_ request: T, authToken: String = "", completion: @escaping ResultCallback<T.Response>) {
+    public func send<T: JsonApiRequest>(_ request: T, authToken: String = "", completion: @escaping ResultCallback<T.Response>) throws {
+        
+        let endpoint = self.endpoint(for: request)
+        let urlRequest = DefaultNetworking().requestFactory(endpoint)
+        if authToken.count > 0 {
+            urlRequest.addHeader(field: "x-auth-token", value: authToken)
+        }
+        try urlRequest
+            .httpMethod(request.type)
+            .jsonBody(request.body)
+            .sharedDataTask { data, response, error in
+            
+                guard let data = data, error == nil else {
+                    completion(.failure(ApiError.server(message: error!.localizedDescription)))
+                    return
+                }
+                
+                let jsonDecoder = JSONDecoder()
+                do {
+                    let objectResponse = try jsonDecoder.decode(T.Response.self, from: data)
+                    completion(.success(objectResponse))
+                } catch let errorDecoding {
+                    completion(.failure(errorDecoding))
+                }
+        }.resume()
+    }
+    
+    public func send<T: TemplateApiRequest>(_ request: T, authToken: String = "", completion: @escaping ResultCallback<T.Response>) {
         
         let endpoint = try! self.endpoint(for: request)
         let request = DefaultNetworking()
-            .request(endpoint)
+            .requestFactory(endpoint)
             .httpMethod(.get)
         
         if authToken.count > 0 {
@@ -59,7 +86,7 @@ public class MyBudgetApiClient {
         
     }
     
-    public func post<T: JsonApiRequest>(_ request: T, completion: @escaping ResultCallback<T.Response>) {
+    public func post<T: JsonApiRequest & ResponseHeaders>(_ request: T, completion: @escaping ResultCallback<T.Response>) {
         
         print("POST request with Body: \(request.body)")
         let endpoint = self.endpoint(for: request)
@@ -90,13 +117,13 @@ public class MyBudgetApiClient {
             var objectResponse = try? jsonDecoder.decode(T.Response.self, from: data)
             
             if objectResponse != nil {
-                if (request is ResponseHeaders) {
-                    if let httpResponse = response as? HTTPURLResponse {
-                        var tmp = objectResponse as! ResponseHeaders
-                        tmp.responseHeaders = httpResponse.allHeaderFields as! [String: String]
-                        objectResponse = tmp as? T.Response
-                    }
+                //if (request is ResponseHeaders) {
+                if let httpResponse = response as? HTTPURLResponse {
+                    var tmp = objectResponse as! ResponseHeaders
+                    tmp.responseHeaders = httpResponse.allHeaderFields as! [String: String]
+                    objectResponse = tmp as? T.Response
                 }
+                //}
                 completion(.success(objectResponse!))
             } else {
                 completion(.failure(ApiError.decoding))

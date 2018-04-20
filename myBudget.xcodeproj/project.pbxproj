@@ -34,7 +34,7 @@
 		34A294C12088B512004EEA33 /* UIView+EasyAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C02088B512004EEA33 /* UIView+EasyAnchor.swift */; };
 		34A294C42088C1E8004EEA33 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C32088C1E8004EEA33 /* Colors.swift */; };
 		34A294C62088CD3F004EEA33 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C52088CD3F004EEA33 /* Movement.swift */; };
-		34A294C82088D003004EEA33 /* GetAccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C72088D003004EEA33 /* GetAccountDetails.swift */; };
+		34A294C82088D003004EEA33 /* GetAccountDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C72088D003004EEA33 /* GetAccountDetailsRequest.swift */; };
 		34A294CA2088D0F7004EEA33 /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C92088D0F7004EEA33 /* AccountDetails.swift */; };
 		34A294CC20890A6D004EEA33 /* URLPathEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294CB20890A6D004EEA33 /* URLPathEncoder.swift */; };
 		34A294CE20890B6A004EEA33 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294CD20890B6A004EEA33 /* HTTPParameter.swift */; };
@@ -46,7 +46,7 @@
 		34A294E720890D20004EEA33 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C52088CD3F004EEA33 /* Movement.swift */; };
 		34A294E820890D20004EEA33 /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C92088D0F7004EEA33 /* AccountDetails.swift */; };
 		34A294E920890D20004EEA33 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294AE20880417004EEA33 /* LoginRequest.swift */; };
-		34A294EA20890D20004EEA33 /* GetAccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C72088D003004EEA33 /* GetAccountDetails.swift */; };
+		34A294EA20890D20004EEA33 /* GetAccountDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294C72088D003004EEA33 /* GetAccountDetailsRequest.swift */; };
 		34A294EB20890D20004EEA33 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294AB20880218004EEA33 /* ApiClient.swift */; };
 		34A294EC20890D20004EEA33 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294A32087FB5B004EEA33 /* Result.swift */; };
 		34A294ED20890D20004EEA33 /* URLPathEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294CB20890A6D004EEA33 /* URLPathEncoder.swift */; };
@@ -60,6 +60,12 @@
 		34A294F920892E37004EEA33 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294F820892E37004EEA33 /* Networking.swift */; };
 		34A294FB2089350F004EEA33 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294FA2089350F004EEA33 /* MainViewController.swift */; };
 		34A294FE208939E8004EEA33 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294FD208939E8004EEA33 /* Currency.swift */; };
+		34A29504208A35E5004EEA33 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A29503208A35E5004EEA33 /* RegisterRequest.swift */; };
+		34A29507208A3C07004EEA33 /* GetAllRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A29506208A3C07004EEA33 /* GetAllRequest.swift */; };
+		34A29509208A3C66004EEA33 /* SearchUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A29508208A3C66004EEA33 /* SearchUserRequest.swift */; };
+		34A2950B208A3DDE004EEA33 /* InviteUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A2950A208A3DDE004EEA33 /* InviteUserRequest.swift */; };
+		34A2950D208A3F1D004EEA33 /* EditAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A2950C208A3F1C004EEA33 /* EditAccountRequest.swift */; };
+		34A2950F208A4115004EEA33 /* InsertAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A2950E208A4115004EEA33 /* InsertAccountRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,13 +119,19 @@
 		34A294C02088B512004EEA33 /* UIView+EasyAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EasyAnchor.swift"; sourceTree = "<group>"; };
 		34A294C32088C1E8004EEA33 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		34A294C52088CD3F004EEA33 /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
-		34A294C72088D003004EEA33 /* GetAccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccountDetails.swift; sourceTree = "<group>"; };
+		34A294C72088D003004EEA33 /* GetAccountDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccountDetailsRequest.swift; sourceTree = "<group>"; };
 		34A294C92088D0F7004EEA33 /* AccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetails.swift; sourceTree = "<group>"; };
 		34A294CB20890A6D004EEA33 /* URLPathEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPathEncoder.swift; sourceTree = "<group>"; };
 		34A294CD20890B6A004EEA33 /* HTTPParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
 		34A294F820892E37004EEA33 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		34A294FA2089350F004EEA33 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		34A294FD208939E8004EEA33 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		34A29503208A35E5004EEA33 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		34A29506208A3C07004EEA33 /* GetAllRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllRequest.swift; sourceTree = "<group>"; };
+		34A29508208A3C66004EEA33 /* SearchUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRequest.swift; sourceTree = "<group>"; };
+		34A2950A208A3DDE004EEA33 /* InviteUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteUserRequest.swift; sourceTree = "<group>"; };
+		34A2950C208A3F1C004EEA33 /* EditAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountRequest.swift; sourceTree = "<group>"; };
+		34A2950E208A4115004EEA33 /* InsertAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAccountRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,8 +295,8 @@
 		34A294AD20880405004EEA33 /* requests */ = {
 			isa = PBXGroup;
 			children = (
-				34A294AE20880417004EEA33 /* LoginRequest.swift */,
-				34A294C72088D003004EEA33 /* GetAccountDetails.swift */,
+				34A29505208A3BF7004EEA33 /* account */,
+				34A29502208A35CE004EEA33 /* auth */,
 			);
 			path = requests;
 			sourceTree = "<group>";
@@ -335,6 +347,28 @@
 				34A2949F2087F0BA004EEA33 /* api */,
 			);
 			path = nogit;
+			sourceTree = "<group>";
+		};
+		34A29502208A35CE004EEA33 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				34A294AE20880417004EEA33 /* LoginRequest.swift */,
+				34A29503208A35E5004EEA33 /* RegisterRequest.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		34A29505208A3BF7004EEA33 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				34A294C72088D003004EEA33 /* GetAccountDetailsRequest.swift */,
+				34A29506208A3C07004EEA33 /* GetAllRequest.swift */,
+				34A29508208A3C66004EEA33 /* SearchUserRequest.swift */,
+				34A2950A208A3DDE004EEA33 /* InviteUserRequest.swift */,
+				34A2950C208A3F1C004EEA33 /* EditAccountRequest.swift */,
+				34A2950E208A4115004EEA33 /* InsertAccountRequest.swift */,
+			);
+			path = account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,17 +505,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A29509208A3C66004EEA33 /* SearchUserRequest.swift in Sources */,
 				34A294C62088CD3F004EEA33 /* Movement.swift in Sources */,
+				34A2950F208A4115004EEA33 /* InsertAccountRequest.swift in Sources */,
 				34A294AC20880218004EEA33 /* ApiClient.swift in Sources */,
 				34A294CA2088D0F7004EEA33 /* AccountDetails.swift in Sources */,
 				34A294CE20890B6A004EEA33 /* HTTPParameter.swift in Sources */,
 				34A294BA2088A278004EEA33 /* ApiError.swift in Sources */,
 				34A294682087DEEC004EEA33 /* LoginViewController.swift in Sources */,
+				34A29507208A3C07004EEA33 /* GetAllRequest.swift in Sources */,
 				34A294FE208939E8004EEA33 /* Currency.swift in Sources */,
 				34A294A82087FEA4004EEA33 /* MovementService.swift in Sources */,
 				34A294AF20880417004EEA33 /* LoginRequest.swift in Sources */,
 				34A294CC20890A6D004EEA33 /* URLPathEncoder.swift in Sources */,
 				34A294AA20880008004EEA33 /* PendingInvitesService.swift in Sources */,
+				34A29504208A35E5004EEA33 /* RegisterRequest.swift in Sources */,
 				34A294BF2088B36E004EEA33 /* HeaderBox.swift in Sources */,
 				34A294BC2088A681004EEA33 /* LoginResult.swift in Sources */,
 				34A294B62088063E004EEA33 /* Account.swift in Sources */,
@@ -493,13 +531,15 @@
 				34A294662087DEEC004EEA33 /* AppDelegate.swift in Sources */,
 				34A294A12087FAC7004EEA33 /* AccountService.swift in Sources */,
 				34A294A42087FB5B004EEA33 /* Result.swift in Sources */,
-				34A294C82088D003004EEA33 /* GetAccountDetails.swift in Sources */,
+				34A294C82088D003004EEA33 /* GetAccountDetailsRequest.swift in Sources */,
 				34A294B22088044C004EEA33 /* JwtAuthenticationResponse.swift in Sources */,
 				34A294B820880840004EEA33 /* MyBudgetApiClient.swift in Sources */,
+				34A2950B208A3DDE004EEA33 /* InviteUserRequest.swift in Sources */,
 				34A294982087E614004EEA33 /* RoundedTextField.swift in Sources */,
 				34A2949B2087ECA0004EEA33 /* UIViewController+UITextField.swift in Sources */,
 				34A294A62087FD3A004EEA33 /* AuthService.swift in Sources */,
 				34A294F920892E37004EEA33 /* Networking.swift in Sources */,
+				34A2950D208A3F1D004EEA33 /* EditAccountRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +557,7 @@
 				34A294E820890D20004EEA33 /* AccountDetails.swift in Sources */,
 				34A294E420890D20004EEA33 /* User.swift in Sources */,
 				34A294EC20890D20004EEA33 /* Result.swift in Sources */,
-				34A294EA20890D20004EEA33 /* GetAccountDetails.swift in Sources */,
+				34A294EA20890D20004EEA33 /* GetAccountDetailsRequest.swift in Sources */,
 				34A294E720890D20004EEA33 /* Movement.swift in Sources */,
 				34A294F320890D20004EEA33 /* MyBudgetApiClient.swift in Sources */,
 				34A294F420890D20004EEA33 /* ApiError.swift in Sources */,

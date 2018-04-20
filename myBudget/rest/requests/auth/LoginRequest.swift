@@ -9,6 +9,8 @@
 import Foundation
 
 public struct LoginRequest: JsonApiRequest, ResponseHeaders {
+    public let type: JsonRequestType = .post
+    
     public typealias Body = LoginRequest.JsonBody
     
     public typealias Response = JwtAuthenticationResponse

@@ -8,8 +8,8 @@
 
 import Foundation
 
-public struct GetAccountDetails: ApiRequest, PathParameters {
-    public typealias _Parameters = Parameters
+public struct GetAccountDetailsRequest: ApiRequest, PathParameters {
+    public typealias PathParametersType = Parameters
     
     public typealias Response = AccountDetails
     
@@ -21,9 +21,9 @@ public struct GetAccountDetails: ApiRequest, PathParameters {
         public var id: String
     }
     
-    public var parameters: GetAccountDetails.Parameters
+    public var pathParameters: GetAccountDetailsRequest.Parameters
     
     init(id: String) {
-        parameters = GetAccountDetails.Parameters(id: id)
+        pathParameters = GetAccountDetailsRequest.Parameters(id: id)
     }
 }
