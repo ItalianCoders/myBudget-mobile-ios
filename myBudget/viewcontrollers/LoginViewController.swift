@@ -38,20 +38,26 @@ class LoginViewController: UIViewController {
                 socialAuthenticationType: .none,
                 socialAccessToken: ""))
         
-        client.post(loginRequest) { [weak self] response in
-            print("Result from client::post")
-            print(response)
-            
-            switch response {
-            case .success(let jwtAuthResponse):
-                print("success!")
-                print(jwtAuthResponse)
-                self?.jwtAuthResponse = jwtAuthResponse
-                self?.performSegue(withIdentifier: "login", sender: nil)
-            case .failure(let error):
-                print("error!")
-                print(error.localizedDescription)
+        do {
+            try client.send(loginRequest) { [weak self] response in
+                print("Result from client::send")
+                print(response)
+                
+                switch response {
+                case .success(let jwtAuthResponse):
+                    print("success!")
+                    print(jwtAuthResponse)
+                    self?.jwtAuthResponse = jwtAuthResponse
+                    self?.performSegue(withIdentifier: "login", sender: nil)
+                case .failure(let error):
+                    // TODO: Insert message to show to the user
+                    print("error!")
+                    print(error.localizedDescription)
+                }
             }
+        } catch let error {
+            // TODO: Insert message to show to the user
+            print(error.localizedDescription)
         }
     }
     

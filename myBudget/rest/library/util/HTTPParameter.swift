@@ -2,8 +2,8 @@
 //  HTTPParameter.swift
 //  myBudget
 //
-//  Created by Ruggiero Altini on 19/04/18.
-//  Copyright © 2018 Ruggiero Altini. All rights reserved.
+//  From victorpimentel / MarvelAPI (Apache-2 License)
+//  https://github.com/victorpimentel/MarvelAPI/blob/master/MarvelAPI.playground/Sources/Utils/HTTPParameter.swift
 //
 
 import Foundation

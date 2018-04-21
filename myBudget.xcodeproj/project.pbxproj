@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3438CA44208B7E1F0016C307 /* URLQueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438CA43208B7E1F0016C307 /* URLQueryEncoder.swift */; };
 		34A294662087DEEC004EEA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294652087DEEC004EEA33 /* AppDelegate.swift */; };
 		34A294682087DEEC004EEA33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294672087DEEC004EEA33 /* LoginViewController.swift */; };
 		34A2946B2087DEEC004EEA33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A294692087DEEC004EEA33 /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3438CA43208B7E1F0016C307 /* URLQueryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoder.swift; sourceTree = "<group>"; };
 		34A294622087DEEC004EEA33 /* myBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A294652087DEEC004EEA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34A294672087DEEC004EEA33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				34A294A32087FB5B004EEA33 /* Result.swift */,
 				34A294CB20890A6D004EEA33 /* URLPathEncoder.swift */,
 				34A294CD20890B6A004EEA33 /* HTTPParameter.swift */,
+				3438CA43208B7E1F0016C307 /* URLQueryEncoder.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				34A294C12088B512004EEA33 /* UIView+EasyAnchor.swift in Sources */,
 				34A294662087DEEC004EEA33 /* AppDelegate.swift in Sources */,
 				34A294A12087FAC7004EEA33 /* AccountService.swift in Sources */,
+				3438CA44208B7E1F0016C307 /* URLQueryEncoder.swift in Sources */,
 				34A294A42087FB5B004EEA33 /* Result.swift in Sources */,
 				34A294C82088D003004EEA33 /* GetAccountDetailsRequest.swift in Sources */,
 				34A294B22088044C004EEA33 /* JwtAuthenticationResponse.swift in Sources */,

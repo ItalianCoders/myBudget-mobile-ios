@@ -39,6 +39,7 @@ class UrlRequestFactory {
     
     @discardableResult
     func jsonBody<T: Encodable>(_ body: T) throws -> UrlRequestFactory {
+        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: "Content-Type")
         let jsonData = try JSONEncoder().encode(body)
         urlRequest.httpBody = jsonData
         return self

@@ -15,8 +15,9 @@ class MainViewController: UIViewController {
     
     var authResponse: JwtAuthenticationResponse!
     var accessToken: String {
-        print(authResponse.responseHeaders)
-        return authResponse.responseHeaders["X-Auth-Token"]!
+        return authResponse.accessToken
+        //print(authResponse.responseHeaders)
+        //return authResponse.responseHeaders["X-Auth-Token"]!
     }
     
     override func viewDidLoad() {

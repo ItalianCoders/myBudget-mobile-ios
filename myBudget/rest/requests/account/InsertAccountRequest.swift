@@ -10,7 +10,9 @@ import Foundation
 
 struct InsertAccountRequest: JsonApiRequest {
     // ApiRequest Associated Properties
-    let resourceName: String = "/protected/v1/accounts"
+    var resourceName: String {
+        return "/protected/v1/accounts"
+    }
     
     // JsonApiRequest Associated Properties
     let type: JsonRequestType = .post

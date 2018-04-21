@@ -9,7 +9,10 @@
 import Foundation
 
 struct EditAccountRequest: JsonApiRequest, PathParameters {
-    let resourceName: String = "/protected/v1/accounts/{id}"
+    var resourceName: String {
+        return "/protected/v1/accounts/{id}"
+    }
+    
     let type: JsonRequestType = .put
     
     typealias Body = Account

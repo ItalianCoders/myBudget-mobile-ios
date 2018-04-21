@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct LoginRequest: JsonApiRequest, ResponseHeaders {
+public struct LoginRequest: JsonApiRequest {
     public let type: JsonRequestType = .post
     
     public typealias Body = LoginRequest.JsonBody
@@ -20,8 +20,6 @@ public struct LoginRequest: JsonApiRequest, ResponseHeaders {
     }
     
     public var body: JsonBody
-    
-    public var responseHeaders: [String : String] = [:]
     
     // Parameters
     public struct JsonBody: Codable {
