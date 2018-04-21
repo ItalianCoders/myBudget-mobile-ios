@@ -8,19 +8,13 @@
 
 import Foundation
 
-public struct JwtAuthenticationResponse: Codable, ResponseHeaders {
+public struct JwtAuthenticationResponse: Codable {
     
-    let user: User//? = nil
+    let user: User?
     
-    let refreshToken: String//? = nil
+    let refreshToken: String
     
-    let accounts: [Account]//? = nil
+    let accessToken: String
     
-    private enum CodingKeys: String, CodingKey {
-        case user
-        case refreshToken
-        case accounts
-    }
-    
-    public var responseHeaders: [String: String] = [:]
+    let accounts: [Account]
 }
