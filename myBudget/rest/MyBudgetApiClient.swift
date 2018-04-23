@@ -25,10 +25,15 @@ fileprivate extension UrlRequestFactory {
 public class MyBudgetApiClient {
     private let baseEndpoint = "https://floating-ravine-25522.herokuapp.com/"
     private let session = URLSession(configuration: .default)
+    private let endpoint: Endpoint
+    
+    init() {
+        endpoint = Endpoint(baseEndpoint: baseEndpoint)
+    }
     
     public func send<T: JsonApiRequest>(_ request: T, authToken: String = "", completion: @escaping ResultCallback<T.Response>) throws {
         
-        let endpoint = self.endpoint(for: request)
+        let endpoint = self.endpoint.for(request: request)
         try DefaultNetworking()
             .requestFactory(endpoint)
             .addAuthTokenIfNonEmpty(authToken)
@@ -53,7 +58,7 @@ public class MyBudgetApiClient {
     
     public func send<T: TemplateApiRequest>(_ request: T, authToken: String = "", completion: @escaping ResultCallback<T.Response>) {
         
-        let endpoint = try! self.endpoint(for: request)
+        let endpoint = try! self.endpoint.for(request: request)
         let _ = DefaultNetworking()
             .requestFactory(endpoint)
             .httpMethod(.get)
@@ -72,38 +77,5 @@ public class MyBudgetApiClient {
                     completion(.failure(errorDecoding))
                 }
         }.resume()
-    }
-    
-    // TODO: Move this logic in a separate class and add consistency
-    public func endpoint<T: ApiRequest>(for request: T) -> URL {
-        return URL(string: (baseEndpoint as NSString).appendingPathComponent(request.resourceName))!
-    }
-    
-    public func endpoint<T: ApiRequest & PathParameters>(for request: T) throws -> URL {
-        let templatePath = (baseEndpoint as NSString).appendingPathComponent(request.resourceName)
-        guard let path = try? URLPathEncoder.encode(request.pathParameters, forUrl: templatePath) else {
-            throw ApiClientError.wrongParameters
-        }
-        guard let url = URL(string: path) else {
-            fatalError("Parsed path non a valid URL")
-        }
-        return url
-    }
-    
-    public func endpoint<T: ApiRequest & QueryParameters>(for request: T) throws -> URL? {
-        let basePath = (baseEndpoint as NSString).appendingPathComponent(request.resourceName)
-        var urlComponents = URLComponents(string: basePath)
-        urlComponents?.queryItems = try URLQueryEncoder.encode(request.queryParameters)
-        return urlComponents?.url
-    }
-    
-    public func endpoint<T: ApiRequest & PathParameters & QueryParameters>(for request: T) throws -> URL? {
-        
-        let templatePath = (baseEndpoint as NSString).appendingPathComponent(request.resourceName)
-        let specificPath = try URLPathEncoder.encode(request.pathParameters, forUrl: templatePath)
-        
-        let parameters: String = try URLQueryEncoder.encode(request.queryParameters)
-        
-        return URL(string: specificPath + parameters)
     }
 }

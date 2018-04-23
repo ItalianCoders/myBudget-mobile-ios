@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RkL-5a-hPH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RkL-5a-hPH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="Hk1-Ir-1TM">
@@ -276,6 +271,42 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEY-gW-bDr">
+                                <rect key="frame" x="11" y="133" width="353" height="492"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohn-TS-omy" userLabel="Header View">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April 2018 - Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAv-Zf-nnO">
+                                                <rect key="frame" x="89" y="2" width="175" height="21"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="2uJ-aW-dpJ"/>
+                                            <constraint firstItem="ZAv-Zf-nnO" firstAttribute="centerY" secondItem="ohn-TS-omy" secondAttribute="centerY" id="FPm-cw-PAL"/>
+                                            <constraint firstItem="ZAv-Zf-nnO" firstAttribute="centerX" secondItem="ohn-TS-omy" secondAttribute="centerX" id="Kb9-9T-ajU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwY-Sa-e5M" userLabel="ChartContainer View">
+                                        <rect key="frame" x="0.0" y="25" width="353" height="467"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ohn-TS-omy" secondAttribute="trailing" id="PEr-xm-9Ij"/>
+                                    <constraint firstAttribute="bottom" secondItem="NwY-Sa-e5M" secondAttribute="bottom" id="c7V-iy-zC8"/>
+                                    <constraint firstAttribute="trailing" secondItem="NwY-Sa-e5M" secondAttribute="trailing" id="dJG-Jp-6cS"/>
+                                    <constraint firstItem="NwY-Sa-e5M" firstAttribute="leading" secondItem="iEY-gW-bDr" secondAttribute="leading" id="gP1-Rt-Fup"/>
+                                    <constraint firstItem="NwY-Sa-e5M" firstAttribute="top" secondItem="ohn-TS-omy" secondAttribute="bottom" id="jVn-wT-qeD"/>
+                                    <constraint firstItem="ohn-TS-omy" firstAttribute="leading" secondItem="iEY-gW-bDr" secondAttribute="leading" id="nDf-or-uic"/>
+                                    <constraint firstItem="ohn-TS-omy" firstAttribute="top" secondItem="iEY-gW-bDr" secondAttribute="top" id="yjN-HZ-5tZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -283,21 +314,27 @@
                             <constraint firstItem="MS6-2V-xPs" firstAttribute="width" secondItem="QVJ-hC-9hb" secondAttribute="width" id="5lb-6r-IJu"/>
                             <constraint firstItem="MS6-2V-xPs" firstAttribute="leading" secondItem="QVJ-hC-9hb" secondAttribute="trailing" constant="10" id="6CM-9G-igm"/>
                             <constraint firstItem="ObP-Xb-XPk" firstAttribute="trailing" secondItem="Dss-G7-SKy" secondAttribute="trailing" constant="11" id="76W-Vb-fV6"/>
+                            <constraint firstItem="ObP-Xb-XPk" firstAttribute="trailing" secondItem="iEY-gW-bDr" secondAttribute="trailing" constant="11" id="9xf-kS-3Oz"/>
                             <constraint firstItem="Dss-G7-SKy" firstAttribute="height" secondItem="QVJ-hC-9hb" secondAttribute="height" id="B6K-ks-L12"/>
+                            <constraint firstItem="ObP-Xb-XPk" firstAttribute="bottom" secondItem="iEY-gW-bDr" secondAttribute="bottom" constant="42" id="KO1-st-VPR"/>
                             <constraint firstItem="MS6-2V-xPs" firstAttribute="top" secondItem="ObP-Xb-XPk" secondAttribute="top" constant="11" id="MX2-dE-Qib"/>
                             <constraint firstItem="Dss-G7-SKy" firstAttribute="top" secondItem="ObP-Xb-XPk" secondAttribute="top" constant="11" id="aoH-If-wd0"/>
+                            <constraint firstItem="iEY-gW-bDr" firstAttribute="top" secondItem="QVJ-hC-9hb" secondAttribute="bottom" constant="8" id="coY-X4-TyO"/>
                             <constraint firstItem="MS6-2V-xPs" firstAttribute="height" secondItem="QVJ-hC-9hb" secondAttribute="height" id="dBZ-VZ-7tt"/>
                             <constraint firstItem="QVJ-hC-9hb" firstAttribute="leading" secondItem="ObP-Xb-XPk" secondAttribute="leading" constant="11" id="hvL-GV-USz"/>
                             <constraint firstItem="QVJ-hC-9hb" firstAttribute="top" secondItem="ObP-Xb-XPk" secondAttribute="top" constant="11" id="p5a-dN-Pfx"/>
                             <constraint firstItem="Dss-G7-SKy" firstAttribute="width" secondItem="QVJ-hC-9hb" secondAttribute="width" id="w7P-ra-Unc"/>
+                            <constraint firstItem="iEY-gW-bDr" firstAttribute="leading" secondItem="ObP-Xb-XPk" secondAttribute="leading" constant="11" id="zTQ-RO-x1e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ObP-Xb-XPk"/>
                     </view>
                     <navigationItem key="navigationItem" id="zNb-1A-CQc"/>
                     <connections>
                         <outlet property="balanceCard" destination="Dss-G7-SKy" id="NC5-kb-gne"/>
+                        <outlet property="chartContainerView" destination="NwY-Sa-e5M" id="3zx-K5-vc7"/>
                         <outlet property="expenseCard" destination="MS6-2V-xPs" id="lod-RY-P4a"/>
                         <outlet property="incomingCard" destination="QVJ-hC-9hb" id="CrU-6a-SNY"/>
+                        <outlet property="monthAndKindLabel" destination="ZAv-Zf-nnO" id="KBg-Fa-Hj3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jHR-ye-IuO" userLabel="First Responder" sceneMemberID="firstResponder"/>

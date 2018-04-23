@@ -13,6 +13,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var expenseCard: HeaderBox!
     @IBOutlet weak var balanceCard: HeaderBox!
     
+    @IBOutlet weak var monthAndKindLabel: UILabel!
+    
+    @IBOutlet weak var chartContainerView: UIView!
+    weak var chartView: ChartView?
+    
     var authResponse: JwtAuthenticationResponse!
     var accessToken: String {
         return authResponse.accessToken
@@ -38,6 +43,18 @@ class MainViewController: UIViewController {
                     self.incomingCard.text = accountDetails.totalMonthlyIncoming.formattedCurrency()
                     self.expenseCard.text = accountDetails.totalMonthlyExpense.formattedCurrency()!
                     self.balanceCard.text = (accountDetails.totalMonthlyIncoming-accountDetails.totalMonthlyExpense).formattedCurrency()
+                    
+                    let chartView = ChartView()
+                    
+                    self.chartContainerView.addSubview(chartView)
+                    chartView.anchor(top: self.chartContainerView.topAnchor, leading: self.chartContainerView.leadingAnchor, bottom: self.chartContainerView.bottomAnchor, trailing: self.chartContainerView.trailingAnchor)
+                    self.chartView = chartView
+                    
+                    let incoming = accountDetails.totalMonthlyIncoming
+                    let expense = accountDetails.totalMonthlyExpense
+                    chartView.add(entry: "Incoming", value: incoming/(incoming+expense))
+                    chartView.add(entry: "Expense", value: expense/(incoming+expense))
+                    chartView.update()
                 }
             case .failure(let error):
                 print("ERROR:")
