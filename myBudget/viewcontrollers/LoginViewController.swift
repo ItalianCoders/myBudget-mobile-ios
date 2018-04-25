@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TokenProvider: class {
+    var authResponse: JwtAuthenticationResponse? { get }
+}
+
 class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: RoundedTextField!
     @IBOutlet weak var passwordTextField: RoundedTextField!
@@ -24,7 +28,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var jwtAuthResponse: JwtAuthenticationResponse?
+    var authResponse: JwtAuthenticationResponse?
     
     @IBAction func loginWasPressed(_ sender: Any) {
         
@@ -47,7 +51,7 @@ class LoginViewController: UIViewController {
                 case .success(let jwtAuthResponse):
                     print("success!")
                     print(jwtAuthResponse)
-                    self?.jwtAuthResponse = jwtAuthResponse
+                    self?.authResponse = jwtAuthResponse
                     self?.performSegue(withIdentifier: "login", sender: nil)
                 case .failure(let error):
                     // TODO: Insert message to show to the user
@@ -64,8 +68,15 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "login" {
             let navVC = segue.destination as! UINavigationController
-            let mainVC = navVC.topViewController as! MainViewController
-            mainVC.authResponse = jwtAuthResponse
+            let tabVC = navVC.topViewController as! UITabBarController
+            let mainVC = tabVC.viewControllers![1] as! MainViewController
+            let movVC = tabVC.viewControllers![0] as! MovementsViewController
+            
+            movVC.tokenProvider = self
+            
+            //let mainVC = navVC.topViewController as! MainViewController
+            mainVC.authResponse = authResponse
         }
     }
 }
+extension LoginViewController: TokenProvider {}

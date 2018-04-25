@@ -9,6 +9,16 @@
 import Foundation
 
 extension Double {
+    func formattedCurrencyMovement() -> String? {
+        guard let formatted = formattedCurrency() else {
+            return nil
+        }
+        if self >= 0 {
+            return "+" + formatted
+        }
+        return formatted
+    }
+    
     func formattedCurrency() -> String? {
         let formatter = NumberFormatter()
         formatter.locale = Locale.current // Change this to another locale if you want to force a specific locale, otherwise this is redundant as the current locale is the default already

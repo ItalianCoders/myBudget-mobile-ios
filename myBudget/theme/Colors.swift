@@ -8,36 +8,11 @@
 
 import UIKit
 
-extension UIColor {
-    public convenience init(red: Int, green: Int, blue: Int) {
-        self.init(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: 1.0)
-    }
-    
-    public static func int(red: Int, green: Int, blue: Int) -> UIColor {
-        return UIColor.init(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: 1.0)
-    }
-    public static func intRgb(_ red: Int, _ green: Int, _ blue: Int) -> UIColor {
-        return UIColor.init(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: 1.0)
-    }
-}
-
-extension UIColor {
-    convenience init(rgb: Int) {
-        self.init(
-            red: (rgb >> 16) & 0xFF,
-            green: (rgb >> 8) & 0xFF,
-            blue: rgb & 0xFF
-        )
-    }
-    
-    public static func rgb(_ rgb: Int) -> UIColor {
-        return UIColor(rgb: rgb)
-    }
-}
-
 struct Colors {
     let lightBlue = UIColor(displayP3Red: 255.0/255.0, green: 0.0, blue: 0x99/255.0, alpha: 0xcc/255.0)
     
+    static let greenIncoming: UIColor = .rgb(0x00701A)
+    static let redExpense: UIColor = .rgb(0xE35D53)
     
     struct Chart {
         

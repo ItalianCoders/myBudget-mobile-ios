@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343828322090B99400278675 /* GetLastMovementsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343828312090B99400278675 /* GetLastMovementsRequest.swift */; };
+		343828342090BD1400278675 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343828332090BD1400278675 /* Page.swift */; };
+		343828362090C13B00278675 /* ArrayToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343828352090C13B00278675 /* ArrayToDictionary.swift */; };
+		343828382090C19600278675 /* SimpleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343828372090C19600278675 /* SimpleDate.swift */; };
+		3438283A2090C5B300278675 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343828392090C5B300278675 /* Categories.swift */; };
+		3438283C2091257600278675 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438283B2091257600278675 /* Debug.swift */; };
 		3438CA44208B7E1F0016C307 /* URLQueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438CA43208B7E1F0016C307 /* URLQueryEncoder.swift */; };
 		34A294662087DEEC004EEA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294652087DEEC004EEA33 /* AppDelegate.swift */; };
 		34A294682087DEEC004EEA33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A294672087DEEC004EEA33 /* LoginViewController.swift */; };
@@ -68,8 +74,16 @@
 		34A2950D208A3F1D004EEA33 /* EditAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A2950C208A3F1C004EEA33 /* EditAccountRequest.swift */; };
 		34A2950F208A4115004EEA33 /* InsertAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A2950E208A4115004EEA33 /* InsertAccountRequest.swift */; };
 		34C1816F208DE802009DBA14 /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C1816E208DE802009DBA14 /* Percent.swift */; };
+		34C18173208E1A73009DBA14 /* FlatMovementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C18172208E1A73009DBA14 /* FlatMovementCell.swift */; };
 		34EC4474208D51BA00CB6D16 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC4473208D51BA00CB6D16 /* Endpoint.swift */; };
 		34EC4476208D56B000CB6D16 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC4475208D56B000CB6D16 /* ChartView.swift */; };
+		34F5479A208FEB4700C3401B /* UIColor+initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F54799208FEB4700C3401B /* UIColor+initializers.swift */; };
+		34F547A12090ABD900C3401B /* MovementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F547A02090ABD900C3401B /* MovementsViewController.swift */; };
+		34F547A42090AE0A00C3401B /* InsertMovementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F547A32090AE0A00C3401B /* InsertMovementRequest.swift */; };
+		34F547A62090AED800C3401B /* EditMovementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F547A52090AED800C3401B /* EditMovementRequest.swift */; };
+		34F547A82090AF8C00C3401B /* DeleteMovementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F547A72090AF8C00C3401B /* DeleteMovementRequest.swift */; };
+		34F547AA2090B02C00C3401B /* SearchMovementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F547A92090B02C00C3401B /* SearchMovementRequest.swift */; };
+		34F547AC2090B22200C3401B /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F547AB2090B22200C3401B /* ApplicationController.swift */; };
 		817A8723A97403FB76DD604A /* Pods_myBudgetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CC28873C3B8BA7670F0BCD /* Pods_myBudgetUITests.framework */; };
 		A15F4EE8B1E97F73CFAB03CE /* Pods_myBudget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9FF78964CFEDD2241BD17E /* Pods_myBudget.framework */; };
 		B891694AB69CA255C5B5C1CA /* Pods_myBudgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46995B17951D8ADE4D9067D /* Pods_myBudgetTests.framework */; };
@@ -95,6 +109,12 @@
 /* Begin PBXFileReference section */
 		038905795CCFE683E534F4E5 /* Pods-myBudgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBudgetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-myBudgetTests/Pods-myBudgetTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F9476B5AEA30188F0235828 /* Pods-myBudget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBudget.release.xcconfig"; path = "Pods/Target Support Files/Pods-myBudget/Pods-myBudget.release.xcconfig"; sourceTree = "<group>"; };
+		343828312090B99400278675 /* GetLastMovementsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLastMovementsRequest.swift; sourceTree = "<group>"; };
+		343828332090BD1400278675 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		343828352090C13B00278675 /* ArrayToDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayToDictionary.swift; sourceTree = "<group>"; };
+		343828372090C19600278675 /* SimpleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDate.swift; sourceTree = "<group>"; };
+		343828392090C5B300278675 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		3438283B2091257600278675 /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		3438CA43208B7E1F0016C307 /* URLQueryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoder.swift; sourceTree = "<group>"; };
 		34A294622087DEEC004EEA33 /* myBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A294652087DEEC004EEA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,8 +163,16 @@
 		34A2950C208A3F1C004EEA33 /* EditAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountRequest.swift; sourceTree = "<group>"; };
 		34A2950E208A4115004EEA33 /* InsertAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAccountRequest.swift; sourceTree = "<group>"; };
 		34C1816E208DE802009DBA14 /* Percent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percent.swift; sourceTree = "<group>"; };
+		34C18172208E1A73009DBA14 /* FlatMovementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMovementCell.swift; sourceTree = "<group>"; };
 		34EC4473208D51BA00CB6D16 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		34EC4475208D56B000CB6D16 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		34F54799208FEB4700C3401B /* UIColor+initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+initializers.swift"; sourceTree = "<group>"; };
+		34F547A02090ABD900C3401B /* MovementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsViewController.swift; sourceTree = "<group>"; };
+		34F547A32090AE0A00C3401B /* InsertMovementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertMovementRequest.swift; sourceTree = "<group>"; };
+		34F547A52090AED800C3401B /* EditMovementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMovementRequest.swift; sourceTree = "<group>"; };
+		34F547A72090AF8C00C3401B /* DeleteMovementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMovementRequest.swift; sourceTree = "<group>"; };
+		34F547A92090B02C00C3401B /* SearchMovementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovementRequest.swift; sourceTree = "<group>"; };
+		34F547AB2090B22200C3401B /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
 		5DE021F53BC2D951ED18342E /* Pods-myBudgetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBudgetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-myBudgetUITests/Pods-myBudgetUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD9FF78964CFEDD2241BD17E /* Pods_myBudget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myBudget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6FE3683AFEDE8BDCE4E11 /* Pods-myBudget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBudget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myBudget/Pods-myBudget.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +210,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343828302090B95F00278675 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				343828312090B99400278675 /* GetLastMovementsRequest.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
 		34A294592087DEEC004EEA33 = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +302,8 @@
 				34C1816D208DE7F6009DBA14 /* double */,
 				34A294FC208939DE004EEA33 /* string */,
 				34A2949A2087ECA0004EEA33 /* UIViewController+UITextField.swift */,
+				343828352090C13B00278675 /* ArrayToDictionary.swift */,
+				343828372090C19600278675 /* SimpleDate.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -275,6 +313,7 @@
 			children = (
 				34A294672087DEEC004EEA33 /* LoginViewController.swift */,
 				34A294FA2089350F004EEA33 /* MainViewController.swift */,
+				34F547A02090ABD900C3401B /* MovementsViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -282,6 +321,8 @@
 		34A2949D2087F05B004EEA33 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				343828302090B95F00278675 /* requests */,
+				34F547AB2090B22200C3401B /* ApplicationController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -322,6 +363,7 @@
 		34A294AD20880405004EEA33 /* requests */ = {
 			isa = PBXGroup;
 			children = (
+				34F547A22090ADF900C3401B /* movement */,
 				34A29505208A3BF7004EEA33 /* account */,
 				34A29502208A35CE004EEA33 /* auth */,
 			);
@@ -337,6 +379,7 @@
 				34A294BB2088A681004EEA33 /* LoginResult.swift */,
 				34A294C52088CD3F004EEA33 /* Movement.swift */,
 				34A294C92088D0F7004EEA33 /* AccountDetails.swift */,
+				343828332090BD1400278675 /* Page.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -344,7 +387,9 @@
 		34A294C22088BC61004EEA33 /* theme */ = {
 			isa = PBXGroup;
 			children = (
+				34F54798208FEB3700C3401B /* library */,
 				34A294C32088C1E8004EEA33 /* Colors.swift */,
+				343828392090C5B300278675 /* Categories.swift */,
 			);
 			path = theme;
 			sourceTree = "<group>";
@@ -373,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				34A2949F2087F0BA004EEA33 /* api */,
+				3438283B2091257600278675 /* Debug.swift */,
 			);
 			path = nogit;
 			sourceTree = "<group>";
@@ -412,7 +458,6 @@
 			children = (
 				34A294BE2088B36E004EEA33 /* HeaderBox.swift */,
 				34A294C02088B512004EEA33 /* UIView+EasyAnchor.swift */,
-				34EC4475208D56B000CB6D16 /* ChartView.swift */,
 			);
 			path = library;
 			sourceTree = "<group>";
@@ -420,8 +465,29 @@
 		34C18171208E0527009DBA14 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				34C18172208E1A73009DBA14 /* FlatMovementCell.swift */,
+				34EC4475208D56B000CB6D16 /* ChartView.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		34F54798208FEB3700C3401B /* library */ = {
+			isa = PBXGroup;
+			children = (
+				34F54799208FEB4700C3401B /* UIColor+initializers.swift */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		34F547A22090ADF900C3401B /* movement */ = {
+			isa = PBXGroup;
+			children = (
+				34F547A32090AE0A00C3401B /* InsertMovementRequest.swift */,
+				34F547A52090AED800C3401B /* EditMovementRequest.swift */,
+				34F547A72090AF8C00C3401B /* DeleteMovementRequest.swift */,
+				34F547A92090B02C00C3401B /* SearchMovementRequest.swift */,
+			);
+			path = movement;
 			sourceTree = "<group>";
 		};
 		9F77D775619FF1DA8507639F /* Frameworks */ = {
@@ -668,13 +734,16 @@
 			files = (
 				34A29509208A3C66004EEA33 /* SearchUserRequest.swift in Sources */,
 				34A294C62088CD3F004EEA33 /* Movement.swift in Sources */,
+				343828362090C13B00278675 /* ArrayToDictionary.swift in Sources */,
 				34A2950F208A4115004EEA33 /* InsertAccountRequest.swift in Sources */,
 				34A294AC20880218004EEA33 /* ApiClient.swift in Sources */,
+				343828342090BD1400278675 /* Page.swift in Sources */,
 				34A294CA2088D0F7004EEA33 /* AccountDetails.swift in Sources */,
 				34A294CE20890B6A004EEA33 /* HTTPParameter.swift in Sources */,
 				34A294BA2088A278004EEA33 /* ApiError.swift in Sources */,
 				34A294682087DEEC004EEA33 /* LoginViewController.swift in Sources */,
 				34A29507208A3C07004EEA33 /* GetAllRequest.swift in Sources */,
+				34F5479A208FEB4700C3401B /* UIColor+initializers.swift in Sources */,
 				34A294FE208939E8004EEA33 /* Currency.swift in Sources */,
 				34A294A82087FEA4004EEA33 /* MovementService.swift in Sources */,
 				34A294AF20880417004EEA33 /* LoginRequest.swift in Sources */,
@@ -682,28 +751,39 @@
 				34A294AA20880008004EEA33 /* PendingInvitesService.swift in Sources */,
 				34A29504208A35E5004EEA33 /* RegisterRequest.swift in Sources */,
 				34A294BF2088B36E004EEA33 /* HeaderBox.swift in Sources */,
+				34C18173208E1A73009DBA14 /* FlatMovementCell.swift in Sources */,
 				34A294BC2088A681004EEA33 /* LoginResult.swift in Sources */,
+				343828322090B99400278675 /* GetLastMovementsRequest.swift in Sources */,
 				34A294B62088063E004EEA33 /* Account.swift in Sources */,
 				34A294FB2089350F004EEA33 /* MainViewController.swift in Sources */,
 				34EC4474208D51BA00CB6D16 /* Endpoint.swift in Sources */,
+				3438283A2090C5B300278675 /* Categories.swift in Sources */,
 				34EC4476208D56B000CB6D16 /* ChartView.swift in Sources */,
 				34A294962087E023004EEA33 /* RoundedButton.swift in Sources */,
 				34A294C42088C1E8004EEA33 /* Colors.swift in Sources */,
 				34A294B4208804B1004EEA33 /* User.swift in Sources */,
 				34A294C12088B512004EEA33 /* UIView+EasyAnchor.swift in Sources */,
 				34A294662087DEEC004EEA33 /* AppDelegate.swift in Sources */,
+				34F547A82090AF8C00C3401B /* DeleteMovementRequest.swift in Sources */,
 				34A294A12087FAC7004EEA33 /* AccountService.swift in Sources */,
 				3438CA44208B7E1F0016C307 /* URLQueryEncoder.swift in Sources */,
 				34A294A42087FB5B004EEA33 /* Result.swift in Sources */,
+				34F547A42090AE0A00C3401B /* InsertMovementRequest.swift in Sources */,
 				34A294C82088D003004EEA33 /* GetAccountDetailsRequest.swift in Sources */,
+				3438283C2091257600278675 /* Debug.swift in Sources */,
 				34C1816F208DE802009DBA14 /* Percent.swift in Sources */,
+				34F547A62090AED800C3401B /* EditMovementRequest.swift in Sources */,
+				34F547A12090ABD900C3401B /* MovementsViewController.swift in Sources */,
 				34A294B22088044C004EEA33 /* JwtAuthenticationResponse.swift in Sources */,
 				34A294B820880840004EEA33 /* MyBudgetApiClient.swift in Sources */,
 				34A2950B208A3DDE004EEA33 /* InviteUserRequest.swift in Sources */,
+				343828382090C19600278675 /* SimpleDate.swift in Sources */,
 				34A294982087E614004EEA33 /* RoundedTextField.swift in Sources */,
+				34F547AC2090B22200C3401B /* ApplicationController.swift in Sources */,
 				34A2949B2087ECA0004EEA33 /* UIViewController+UITextField.swift in Sources */,
 				34A294A62087FD3A004EEA33 /* AuthService.swift in Sources */,
 				34A294F920892E37004EEA33 /* Networking.swift in Sources */,
+				34F547AA2090B02C00C3401B /* SearchMovementRequest.swift in Sources */,
 				34A2950D208A3F1D004EEA33 /* EditAccountRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

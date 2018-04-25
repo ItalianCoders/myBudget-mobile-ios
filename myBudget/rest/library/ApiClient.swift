@@ -60,6 +60,7 @@ public protocol QueryParameters: Encodable {
 
 public typealias TemplateApiRequest = ApiRequest & PathParameters
 public typealias QueriedApiRequest = ApiRequest & QueryParameters
+public typealias TemplateQueriedApiRequest = ApiRequest & PathParameters & QueryParameters
 
 public protocol ResponseHeaders: Codable {
     var responseHeaders: [String: String] { get set }

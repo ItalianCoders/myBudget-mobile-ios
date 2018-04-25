@@ -78,4 +78,28 @@ public class MyBudgetApiClient {
                 }
         }.resume()
     }
+    
+    public func send<T: ApiRequest & PathParameters & QueryParameters>(_ request: T, authToken: String = "", completion: @escaping ResultCallback<T.Response>) {
+        
+        let endpoint = try! self.endpoint.for(request: request)
+        print("ENDPOINT : " + endpoint!.absoluteString)
+        let _ = DefaultNetworking()
+            .requestFactory(endpoint!)
+            .httpMethod(.get)
+            .addAuthTokenIfNonEmpty(authToken)
+            .sharedDataTask { data, response, error in
+                guard let data = data, error == nil else {
+                    completion(.failure(ApiError.server(message: error!.localizedDescription)))
+                    return
+                }
+                
+                let jsonDecoder = JSONDecoder()
+                do {
+                    let objectResponse = try jsonDecoder.decode(T.Response.self, from: data)
+                    completion(.success(objectResponse))
+                } catch let errorDecoding {
+                    completion(.failure(errorDecoding))
+                }
+            }.resume()
+    }
 }

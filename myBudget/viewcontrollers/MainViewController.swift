@@ -39,7 +39,11 @@ class MainViewController: UIViewController {
                 print(accountDetails)
                 
                 DispatchQueue.main.async {
-                    self.navigationItem.title = accountDetails.name
+                    if let navigationItem = self.tabBarController?.navigationItem {
+                        self.tabBarController?.navigationItem.title = accountDetails.name
+                    } else {
+                        self.navigationItem.title = accountDetails.name
+                    }
                     self.incomingCard.text = accountDetails.totalMonthlyIncoming.formattedCurrency()
                     self.expenseCard.text = accountDetails.totalMonthlyExpense.formattedCurrency()!
                     self.balanceCard.text = (accountDetails.totalMonthlyIncoming-accountDetails.totalMonthlyExpense).formattedCurrency()
